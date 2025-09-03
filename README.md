@@ -75,7 +75,7 @@ de novas experiências.
 ---
 
 ## 🐍 Cobra de contribuição
-![snake](https://github.com/ViniciusCunha2805/README/blob/output/snake-dark.svg)
+![snake]([https://github.com/ViniciusCunha2805/README/blob/output/snake-dark.svg](https://github.com/ViniciusCunha2805/ViniciusCunha2805/blob/output/snake-dark.svg))
 
 ---
 

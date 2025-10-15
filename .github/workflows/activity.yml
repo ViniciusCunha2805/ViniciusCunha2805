@@ -2,20 +2,21 @@ name: Update Recent Activity
 
 on:
   schedule:
-    - cron: "0 */6 * * *"   # roda a cada 6 horas
-  workflow_dispatch:
+    - cron: '0 */6 * * *'     # a cada 6 horas (UTC)
+  workflow_dispatch:           # botão "Run workflow" no Actions
+
+permissions:
+  contents: write
 
 jobs:
   activity:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-
     steps:
       - uses: actions/checkout@v4
-      - uses: Readme-Workflows/recent-activity@v2
+      - uses: jamesgeorge007/github-activity-readme@v0.3.0
+        with:
+          GH_USERNAME: ViniciusCunha2805
+          COMMIT_MSG: "chore: atualizar atividades no README [skip ci]"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          COMMIT_MSG: "chore: update recent activity"
-          MAX_LINES: 10
+        continue-on-error: true

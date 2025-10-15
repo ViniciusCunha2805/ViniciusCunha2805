@@ -13,7 +13,7 @@ jobs:
       - name: Generate SVGs
         uses: Platane/snk@v3
         with:
-          github_user_name: LucasMarianiG
+          github_user_name: ViniciusCunha2805
           outputs: |
             dist/snake.svg
             dist/snake-dark.svg?palette=github-dark
